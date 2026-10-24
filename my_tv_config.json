@@ -1,16 +1,18 @@
 {
   "greeting_name": "Shaiwal & Shaila",
   "dock_apps": [
+    "com.shaix2.puchki",
     "com.netflix.ninja",
     "com.google.android.youtube.tv",
     "in.startv.hotstar",
     "com.amazon.amazonvideo.livingroom",
-    "com.sonyliv",
-    "tv.airtel.xstream.tvapp"
+    "com.sonyliv"
   ],
-  "columns": 5,
+  "columns": 6,
   "rows_below_dock": 1,
-  "reduced_motion": true,
+  "dock_glass": true,
+  "dock_even_padding": true,
+  "ambient_glow": true,
   "background_color": "#0d1117",
   "wallpaper": false
 }
