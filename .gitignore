@@ -25,3 +25,5 @@ __pycache__/
 keystore.properties
 *.jks.properties
 launcher_source/
+*.png
+puchki_app/
