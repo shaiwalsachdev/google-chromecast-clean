@@ -1,0 +1,41 @@
+=== Clean TV Optimization Run: 20261024_131004 ===
+--- Step 1: Disabling Telemetry & Ad Services ---
+Processing [com.google.android.federatedcompute] (Federated compute background telemetry)...
+Package com.google.android.federatedcompute new state: disabled-user
+  -> Disabled: com.google.android.federatedcompute
+Processing [com.google.android.ondevicepersonalization.services] (On-device personalization ads/tracking)...
+Package com.google.android.ondevicepersonalization.services new state: disabled-user
+  -> Disabled: com.google.android.ondevicepersonalization.services
+Processing [com.google.android.adservices.api] (Android AdServices API)...
+Package com.google.android.adservices.api new state: disabled-user
+  -> Disabled: com.google.android.adservices.api
+Processing [com.google.android.ext.adservices.api] (AdServices extension module)...
+Package com.google.android.ext.adservices.api new state: disabled-user
+  -> Disabled: com.google.android.ext.adservices.api
+Processing [com.google.android.sdksandbox] (SDK Sandbox ad runtime)...
+Package com.google.android.sdksandbox new state: disabled-user
+  -> Disabled: com.google.android.sdksandbox
+Processing [com.google.android.feedback] (Google user feedback daemon)...
+Package com.google.android.feedback new state: disabled-user
+  -> Disabled: com.google.android.feedback
+Processing [com.google.android.partnersetup] (Partner telemetry setup)...
+Package com.google.android.partnersetup new state: disabled-user
+  -> Disabled: com.google.android.partnersetup
+Processing [com.google.android.tvrecommendations] (Home recommendation ads injector)...
+
+Exception occurred while executing 'disable-user':
+java.lang.SecurityException: Shell cannot change component state for null to 3
+	at com.android.server.pm.PackageManagerService.setEnabledSettings(PackageManagerService.java:3958)
+	at com.android.server.pm.PackageManagerService.-$$Nest$msetEnabledSettings(PackageManagerService.java:0)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.setApplicationEnabledSetting(PackageManagerService.java:5760)
+	at com.android.server.pm.PackageManagerShellCommand.runSetEnabledSetting(PackageManagerShellCommand.java:2482)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:273)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6396)
+	at android.os.Binder.shellCommand(Binder.java:1068)
+	at android.os.Binder.onTransact(Binder.java:888)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4352)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6380)
+	at android.os.Binder.execTransactInternal(Binder.java:1344)
+	at android.os.Binder.execTransact(Binder.java:1275)

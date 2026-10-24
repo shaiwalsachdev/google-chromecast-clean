@@ -1,0 +1,6 @@
+=== Switching to Clean Your TV Launcher: 20261024_131350 ===
+Disabling stock Google TV launcherx...
+Package com.google.android.apps.tv.launcherx new state: disabled-user
+Current Home Activity is now: priority=1 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true
+com.google.android.tungsten.setupwraith/.RecoveryActivity
+=== Launcher Switch Complete! ===

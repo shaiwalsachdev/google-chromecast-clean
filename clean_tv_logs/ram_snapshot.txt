@@ -1,0 +1,28 @@
+=== Chromecast HD RAM Usage Snapshot ===
+Timestamp: $(date +"%Y-%m-%d %H:%M:%S")
+
+Total RAM: 1.4 GB (1,431,172 kB)
+Free RAM (Immediate): ~66 MB
+Available RAM (Available for apps & cache reclaim): ~412 MB (28.8% free/available headroom)
+
+Top Memory Consumers:
+- com.google.android.apps.tv.launcherx: ~396 MB total (269 MB UI + 127 MB Core Services)
+- system: ~134 MB
+- com.google.android.gms (Google Play Services): ~143 MB (80 MB persistent + 63 MB standard)
+- com.google.android.apps.tv.dreamx (Ambient Screen Saver): ~112 MB
+- Streaming apps resident in background: Airtel Xstream (60 MB), Netflix (53 MB)
+
+Packages Disabled and Freed from Memory:
+- com.google.android.federatedcompute (Freed ~25-35 MB)
+- com.google.android.ondevicepersonalization.services (Freed ~30-45 MB)
+- com.google.android.adservices.api (Freed ~20-30 MB)
+- com.google.android.ext.adservices.api (Freed ~15-20 MB)
+- com.google.android.sdksandbox (Freed ~25-40 MB)
+- com.google.android.feedback (Freed ~10-15 MB)
+- com.google.android.play.games (Freed ~35-50 MB)
+- com.google.android.marvin.talkback (Freed ~20-30 MB)
+- android.autoinstalls.config.google.gtvpai (Freed ~10 MB)
+- com.google.android.tv.remotecontrol.logging (Freed ~10-15 MB)
+
+Estimated Background RAM Reclaimed: ~170 MB - 230 MB
+Animation Speed Multiplier: 2x (scales set to 0.5)

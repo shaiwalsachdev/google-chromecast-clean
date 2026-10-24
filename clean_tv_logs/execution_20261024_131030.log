@@ -1,0 +1,66 @@
+=== Clean TV Optimization Run: 20261024_131030 ===
+--- Step 1: Disabling Telemetry & Ad Services ---
+Processing [com.google.android.federatedcompute] (Federated compute background telemetry)...
+  -> Successfully disabled: com.google.android.federatedcompute
+Processing [com.google.android.ondevicepersonalization.services] (On-device personalization ads/tracking)...
+  -> Successfully disabled: com.google.android.ondevicepersonalization.services
+Processing [com.google.android.adservices.api] (Android AdServices API)...
+  -> Successfully disabled: com.google.android.adservices.api
+Processing [com.google.android.ext.adservices.api] (AdServices extension module)...
+  -> Successfully disabled: com.google.android.ext.adservices.api
+Processing [com.google.android.sdksandbox] (SDK Sandbox ad runtime)...
+  -> Successfully disabled: com.google.android.sdksandbox
+Processing [com.google.android.feedback] (Google user feedback daemon)...
+  -> Successfully disabled: com.google.android.feedback
+Processing [com.google.android.partnersetup] (Partner telemetry setup)...
+  -> Successfully disabled: com.google.android.partnersetup
+Processing [com.google.android.tvrecommendations] (Home recommendation ads injector)...
+  -> Protected by system, skipped (
+Exception occurred while executing 'disable-user':
+java.lang.SecurityException: Shell cannot change component state for null to 3
+	at com.android.server.pm.PackageManagerService.setEnabledSettings(PackageManagerService.java:3958)
+	at com.android.server.pm.PackageManagerService.-$$Nest$msetEnabledSettings(PackageManagerService.java:0)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.setApplicationEnabledSetting(PackageManagerService.java:5760)
+	at com.android.server.pm.PackageManagerShellCommand.runSetEnabledSetting(PackageManagerShellCommand.java:2482)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:273)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6396)
+	at android.os.Binder.shellCommand(Binder.java:1068)
+	at android.os.Binder.onTransact(Binder.java:888)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4352)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6380)
+	at android.os.Binder.execTransactInternal(Binder.java:1344)
+	at android.os.Binder.execTransact(Binder.java:1275))
+Processing [android.autoinstalls.config.google.gtvpai] (Partner auto-installs)...
+  -> Successfully disabled: android.autoinstalls.config.google.gtvpai
+Processing [com.google.android.tv.remotecontrol.logging] (Remote control analytics logging)...
+  -> Successfully disabled: com.google.android.tv.remotecontrol.logging
+--- Step 2: Disabling Unused Google Preloads ---
+Processing [com.google.android.play.games] (Google Play Games TV background daemon)...
+  -> Successfully disabled: com.google.android.play.games
+Processing [com.google.android.apps.education.cast2class] (Google Cast for Education / Classroom)...
+  -> Protected by system, skipped (
+Exception occurred while executing 'disable-user':
+java.lang.SecurityException: Shell cannot change component state for null to 3
+	at com.android.server.pm.PackageManagerService.setEnabledSettings(PackageManagerService.java:3958)
+	at com.android.server.pm.PackageManagerService.-$$Nest$msetEnabledSettings(PackageManagerService.java:0)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.setApplicationEnabledSetting(PackageManagerService.java:5760)
+	at com.android.server.pm.PackageManagerShellCommand.runSetEnabledSetting(PackageManagerShellCommand.java:2482)
+	at com.android.server.pm.PackageManagerShellCommand.onCommand(PackageManagerShellCommand.java:273)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onShellCommand(PackageManagerService.java:6396)
+	at android.os.Binder.shellCommand(Binder.java:1068)
+	at android.os.Binder.onTransact(Binder.java:888)
+	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:4352)
+	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6380)
+	at android.os.Binder.execTransactInternal(Binder.java:1344)
+	at android.os.Binder.execTransact(Binder.java:1275))
+Processing [com.google.android.marvin.talkback] (TalkBack Screen Reader (accessibility))...
+  -> Successfully disabled: com.google.android.marvin.talkback
+--- Step 3: Accelerating UI Animation Speeds ---
+  -> Animation scales set to 0.5x (snappy & responsive)
+=== Optimization Completed Successfully! ===
+Detailed log: clean_tv_logs/execution_20261024_131030.log
+Undo script created: clean_tv_logs/undo_clean_20261024_131030.sh (and linked to undo_latest.sh)
