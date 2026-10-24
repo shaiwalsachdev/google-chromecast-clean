@@ -1,5 +1,5 @@
 {
-  "greeting_name": "Shaiwal & Shaila",
+  "greeting_name": "#Shaigothershai",
   "dock_apps": [
     "com.tcl.browser",
     "com.netflix.ninja",
@@ -13,6 +13,6 @@
   "dock_glass": true,
   "dock_even_padding": true,
   "ambient_glow": true,
-  "background_color": "#0d1117",
+  "background_color": "#140b12",
   "wallpaper": false
 }
